@@ -1,0 +1,20 @@
+import pygame
+import PIL
+import cv2
+import moviepy
+import pydub
+import pkg_resources
+import tkinter as tk
+
+def check_installation():
+    print("✅ Pygame version:", pygame.__version__)
+    print("✅ Pillow version:", PIL.__version__)
+    print("✅ OpenCV version:", cv2.__version__)
+    print("✅ MoviePy version:", moviepy.__version__)
+    # Get version of pydub using pkg_resources
+    pydub_version = pkg_resources.get_distribution("pydub").version
+    print("✅ Pydub version:", pydub_version)
+    print("✅ Tkinter is installed and working!")
+
+if __name__ == "__main__":
+    check_installation()
